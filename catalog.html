@@ -4,13 +4,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
 
     <header class="main-header">
 
-      <div class="container">
+      <div class="container clearfix">
         <div class="header-logo">
           <a href="index.html">
             <img src="img/logo-header.png" width="111" height="24" alt="Барбершоп «Бородинский»">
@@ -59,34 +60,38 @@
         </li>
       </ul>
 
-      <article class="catalogue">
+      <article class="catalogue clearfix">
         <form class="catalogue-filters" action="https://echo.htmlacademy.ru" method="get">
-          <h2>Производители:</h2>
-          <input type="checkbox" name="baxter" id="catalogue-filters-baxter" checked>
-          <label for="catalogue-filters-baxter">Baxter of California</label>
-          <input type="checkbox" name="natty" id="catalogue-filters-natty">
-          <label for="catalogue-filters-natty">Mr Natty</label>
-          <input type="checkbox" name="suavecito" id="catalogue-filters-suavecito" checked>
-          <label for="catalogue-filters-suavecito">Suavecito</label>
-          <input type="checkbox" name="malin" id="catalogue-filters-malin">
-          <label for="catalogue-filters-malin">Malin-Goetz</label>
-          <input type="checkbox" name="murray" id="catalogue-filters-murray">
-          <label for="catalogue-filters-murray">Murray's</label>
-          <input type="checkbox" name="crew" id="catalogue-filters-crew" checked>
-          <label for="catalogue-filters-crew">American Crew</label>
+          <div class="filters-group">
+            <h2>Производители:</h2>
+            <input type="checkbox" name="baxter" id="catalogue-filters-baxter" checked>
+            <label for="catalogue-filters-baxter">Baxter of California</label>
+            <input type="checkbox" name="natty" id="catalogue-filters-natty">
+            <label for="catalogue-filters-natty">Mr Natty</label>
+            <input type="checkbox" name="suavecito" id="catalogue-filters-suavecito" checked>
+            <label for="catalogue-filters-suavecito">Suavecito</label>
+            <input type="checkbox" name="malin" id="catalogue-filters-malin">
+            <label for="catalogue-filters-malin">Malin-Goetz</label>
+            <input type="checkbox" name="murray" id="catalogue-filters-murray">
+            <label for="catalogue-filters-murray">Murray's</label>
+            <input type="checkbox" name="crew" id="catalogue-filters-crew" checked>
+            <label for="catalogue-filters-crew">American Crew</label>
+          </div>
 
-          <h2>Группы товаров:</h2>
-          <input type="radio" name="brands" id="catalogue-filters-shaving" value="shaving">
-          <label for="catalogue-filters-shaving">Бритвенные принадлежности</label>
-          <input type="radio" name="brands" id="catalogue-filters-care" value="care" checked>
-          <label for="catalogue-filters-care">Средства для ухода</label>
-          <input type="radio" name="brands" id="catalogue-filters-accessories" value="accessories">
-          <label for="catalogue-filters-accessories">Аксессуары</label>
+          <div class="filters-group">
+            <h2>Группы товаров:</h2>
+            <input type="radio" name="brands" id="catalogue-filters-shaving" value="shaving">
+            <label for="catalogue-filters-shaving">Бритвенные принадлежности</label>
+            <input type="radio" name="brands" id="catalogue-filters-care" value="care" checked>
+            <label for="catalogue-filters-care">Средства для ухода</label>
+            <input type="radio" name="brands" id="catalogue-filters-accessories" value="accessories">
+            <label for="catalogue-filters-accessories">Аксессуары</label>
+          </div>
 
           <button class="btn" type="submit">Показать</button>
         </form>
 
-        <section class="catalogue-content">
+        <section class="catalogue-content clearfix">
           <article class="catalogue-content-item">
             <a href="#">
               <img src="img/catalog-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
@@ -147,20 +152,20 @@
               <a class="btn" href="#">Купить</a>
             </div>
           </article>
-        </section>
 
-         <section class="catalogue-content-pages">
+          <section class="catalogue-content-pages">
            <a href="#">1</a>
            <span>2</span>
            <a href="#">3</a>
            <a href="#">4</a>
          </section>
+        </section>
       </article>
 
     </main>
     <footer class="main-footer">
 
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
