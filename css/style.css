@@ -4,6 +4,8 @@ body {
   line-height: 1.5;
   font-family: "Sans Narrow", "Tahoma", sans-serif;
   color: black;
+  /*background: #000000 url("img/barbershop-index-grid.jpg") no-repeat 50% 3px;
+  background-size: 1122px auto;*/
 }
 
 h1 {
