@@ -161,8 +161,8 @@ h1 {
   width: 18px;
   height: 18px;
 
-  background: transparent url("img/sprite.png") no-repeat; /*Check: make sprite for login*/
-  background-position: -1px -15px; /*Check: by icon position*/
+  background: transparent url("../img/sprite.png") no-repeat; /*Check: make sprite for login*/
+  background-position: -5px -230px; /*Check: by icon position*/
   opacity: 0.3;
 }
 
@@ -216,7 +216,7 @@ h1 {
   vertical-align: top;
   text-decoration: none;
 
-  background: #000000 url("img/sprite.png") no-repeat center; /*Check: make sprite*/
+  background: #000000 url("../img/sprite.png") no-repeat center; /*Check: make sprite*/
 
   transition: 
     background-position 0.5s,
@@ -228,27 +228,27 @@ h1 {
 }
 
 .social-btn-vk {
-  background-position: 9px -447px; /*Check: make sprite*/
+  background-position: -5px -322px; /*Check: make sprite*/
 }
 
 .social-btn-fb {
-  background-position: 15px -171px; /*Check: make sprite*/
+  background-position: -5px -94px; /*Check: make sprite*/
 }
 
 .social-btn-inst {
-  background-position: 12px -313px; /*Check: make sprite*/
+  background-position: -5px -166px; /*Check: make sprite*/
 }
 
 .social-btn-vk:hover {
-  background-position: 9px -381px; /*Check: make sprite*/
+  background-position: -5px -286px; /*Check: make sprite*/
 }
 
 .social-btn-fb:hover {
-  background-position: 15px -100px; /*Check: make sprite*/
+  background-position: -5px -58px; /*Check: make sprite*/
 }
 
 .social-btn-inst:hover {
-  background-position: 12px -242px; /*Check: make sprite*/
+  background-position: -5px -130px; /*Check: make sprite*/
 }
 
 .footer-copyright {
