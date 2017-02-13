@@ -508,7 +508,6 @@ h1 {
 }
 
 .popup-login {
-  display: none;
   width: 300px;
   padding: 50px 80px;
   z-index: 20;
@@ -598,13 +597,13 @@ h1 {
 .popup-login  input.icon-user {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: 100% -258px;
+  background-position: 100% -245px;
 }
 
 .popup-login  input.icon-password {
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: 100% -202px;
+  background-position: 100% -189px;
 }
 
 .popup-login .restore {
