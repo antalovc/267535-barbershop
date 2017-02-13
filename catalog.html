@@ -8,18 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+  <body class="inner-page">
 
     <header class="main-header">
 
       <div class="container clearfix">
-        <div class="header-logo">
-          <a href="index.html">
+        <nav class="main-navigation">
+          <a class="header-logo" href="index.html">
             <img src="img/logo-header.png" width="111" height="24" alt="Барбершоп «Бородинский»">
           </a>
-        </div>
 
-        <nav class="main-navigation">
           <ul>
             <li>
               <a href="#">Информация</a>
@@ -30,8 +28,8 @@
             <li>
               <a href="#">Прайс-лист</a>
             </li>
-            <li class="main-navigation-current">
-              <a href="#">Магазин</a>
+            <li class="active">
+              <a>Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -45,21 +43,23 @@
       </div>
 
     </header>
+
     <main class="container">
 
-      <h1>Средства для ухода</h1>
-
-      <ul class="breacdrumbs">
-        <li>
-          <a href="index.html">Главная</a>
-        </li>
-        <li>
-          <a href="#">Магазин</a>
-        </li>
-        <li>
-          Средства для ухода
-        </li>
-      </ul>
+      <div class="inner-page-title">
+        <h1>Средства для ухода</h1>
+        <ul class="breacdrumbs">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            Средства для ухода
+          </li>
+        </ul>
+      </div>
 
       <article class="catalog clearfix">
         <form class="catalog-filters" action="https://echo.htmlacademy.ru" method="get">
@@ -164,7 +164,7 @@
       </article>
 
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer inner-page-footer">
 
       <div class="container clearfix">
         <section class="footer-contacts">
