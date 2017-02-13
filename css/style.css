@@ -4,7 +4,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5; /*Check: 24px on demo*/
-  font-family: "Sans Narrow", "Tahoma", sans-serif;
+  font-family: "PT Sans Narrow", "Tahoma", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   background: #000000 url("../img/index-background.jpg") no-repeat center 3px;/*Check: top on demo*/
@@ -204,7 +204,7 @@ h1 {
   height: 18px;
 
   background: transparent url("../img/sprite.png") no-repeat; /*Check: make sprite for login*/
-  background-position: -5px -230px; /*Check: by icon position*/
+  background-position: -5px -232px; /*Check: by icon position*/
   opacity: 0.3;
 }
 
@@ -219,7 +219,7 @@ h1 {
   padding-bottom: 40px;
 
   color: #ffffff; /* лучше явно прописать везде для футера */
-  background: #252525 url("../img/background-dark.jpg");
+  background: #252525 url("../img/background-dark.png");
 }
 
 .inner-page-footer {
@@ -274,27 +274,27 @@ h1 {
 }
 
 .social-btn-vk {
-  background-position: -5px -322px; /*Check: make sprite*/
+  background-position: 4px -312px; /*Check: make sprite*/
 }
 
 .social-btn-fb {
-  background-position: -5px -94px; /*Check: make sprite*/
+  background-position: 4px -86px; /*Check: make sprite*/
 }
 
 .social-btn-inst {
-  background-position: -5px -166px; /*Check: make sprite*/
+  background-position: 4px -158px; /*Check: make sprite*/
 }
 
 .social-btn-vk:hover {
-  background-position: -5px -286px; /*Check: make sprite*/
+  background-position: 4px -275px; /*Check: make sprite*/
 }
 
 .social-btn-fb:hover {
-  background-position: -5px -58px; /*Check: make sprite*/
+  background-position: 4px -49px; /*Check: make sprite*/
 }
 
 .social-btn-inst:hover {
-  background-position: -5px -130px; /*Check: make sprite*/
+  background-position: 4px -120px; /*Check: make sprite*/
 }
 
 .footer-copyright {
@@ -388,7 +388,7 @@ h1 {
   color: #000000;
 
   background: url("../img/separator-vertical.png") no-repeat center,
-    #f8f5f2 url("../img/background-light.jpg");
+    #f8f5f2 url("../img/background-light.png");
 }
 
 .index-content-left {
@@ -498,8 +498,201 @@ h1 {
 }
 
 /*==========POPUPS==========*/
+.popup {
+  position: fixed;
+  top: 120px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .popup-login {
-  display: none; /*TODO: tmp*/
+  display: none;
+  width: 300px;
+  padding: 50px 80px;
+  z-index: 20;
+
+  color: #000000;
+
+  background: #f8f3f0 url("../img/background-light.png");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.popup-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.popup-close::before,
+.popup-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.popup-close::before {
+  transform: rotate(45deg);
+}
+
+.popup-close::after {
+  transform: rotate(-45deg);
+}
+
+.popup-login h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.popup-login p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.popup-login form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.popup-login input[type="text"],
+.popup-login input[type="password"] {
+  width: 241px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-right: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.popup-login input:focus {
+  border-color: #663d15;
+}
+
+.popup-login  input.icon-user {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 100% -258px;
+}
+
+.popup-login  input.icon-password {
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 100% -202px;
+}
+
+.popup-login .restore {
+  float: right;
+
+  color: #000000;
+}
+
+.popup-login .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.remember-checkbox {
+  position: relative;
+
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+
+.remember-checkbox:hover {
+  color: #663d15;
+}
+
+.remember-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.remember-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000000;
+}
+
+.remember-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.remember-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+
+  width: 15px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.remember-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.remember-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.popup-map {
+  top: 50%;
+  margin-top: -280px;
+  z-index: 20;
+  display: none;
+
+  width: 766px;
+  height: 560px;
+
+  background: #e9e5dc url("img/map.png");
+  border: 7px solid white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+/*.popup-login {
   width: 460px;
   margin: 0 auto;
   padding: 50px 0;
@@ -509,8 +702,7 @@ h1 {
   margin: 0 auto;
   width: 300px;
 
-  /* Только для оформления сетки */
-  min-height: 240px;
+  min-height: 240px; Только для оформления сетки
 }
 
 .popup-login>h2 {
@@ -518,22 +710,12 @@ h1 {
   width: 300px;
 }
 
-/* Только для оформления сетки */
-.popup-login>a {
-  display:none;
-}
-
 .popup-map {
-  display: none; /*TODO: tmp*/
   margin: 0 auto;
   width: 780px;
   padding: 7px;
-}
+}*/
 
-/* Только для оформления сетки */
-.popup-map>a {
-  display:none;
-}
 
 
 /*==========INNER PAGES - COMMON==========*/
