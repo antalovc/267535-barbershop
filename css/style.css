@@ -824,6 +824,7 @@ h1 {
   font-size: 48px;
   line-height: 48px;
   text-align: center;
+  vertical-align: baseline;/*Check - rly?*/
 
   background: red;
   
