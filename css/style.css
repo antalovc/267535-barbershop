@@ -931,11 +931,88 @@ body {
 }
 
 .catalog-filters .filters-group{
-  margin-bottom: 52px;
+  margin-bottom: 50px;
+}
+
+.filters-group h3 {
+  margin: 0px;
+  margin-bottom: 28px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filters-group label {
+  display: inline-block;
+  margin: 0px;
+  margin-bottom: 19px;
+  padding-left: 45px;
+
+  font-size: 14px;
+  vertical-align: baseline;
+  line-height: 18px;
+}
+
+.filters-group input {
+  display: none;
 }
 
 .catalog-filters label {
+  position: relative;
+
   display: block;
+}
+
+.catalog-filters label:hover {
+  color: #663d15;
+  background-color: transparent;
+}
+
+.catalog-filters-checkbox + label::before,
+.catalog-filters-checkbox + label::after,
+.catalog-filters-radio + label::before,
+.catalog-filters-radio + label::after {
+  position: absolute;
+
+  content: "";
+}
+
+.catalog-filters-checkbox + label::before,
+.catalog-filters-radio + label::before {
+  top: 0px;
+  left: 1px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid black;
+}
+
+.catalog-filters-radio + label::before {
+  border-radius: 50%;
+}
+
+.catalog-filters-checkbox + label::after {
+
+}
+
+.catalog-filters-checkbox:checked + label::before {
+}
+
+.catalog-filters-radio:checked + label::before {
+}
+
+.catalog-filters-checkbox:disabled + label,
+.catalog-filters-checkbox:disabled + label::before,
+.catalog-filters-checkbox:disabled + label::after,
+.catalog-filters-radio:disabled + label,
+.catalog-filters-radio:disabled + label::before,
+.catalog-filters-radio:disabled + label::after {
+  opacity: 0.5;
+}
+
+.catalog-filters .btn {
+  width: 112px;
 }
 
 .catalog-content {
