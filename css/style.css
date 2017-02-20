@@ -18,23 +18,6 @@ body {
 }
 
 /*Check: mine*/
-h1 {
-  font-size: 30px;
-  line-height: 1.4;
-}
-
-/*Check: mine*/
-h2 {
-  font-size: 30px;
-  line-height: 1.4;
-}
-
-/*Check: mine*/
-h1 {
-  margin-bottom: 22px;
-}
-
-/*Check: mine*/
 .breadcrumbs {
   margin-bottom: 52px;
 }
@@ -97,7 +80,7 @@ h1 {
 }
 
 .inner-page .main-header {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .main-header .header-logo{
@@ -118,7 +101,7 @@ h1 {
 
 .main-navigation {
   float: left;
-  width: 630px;
+  width: 780px;
 }
 
 .main-navigation ul {
@@ -230,6 +213,8 @@ h1 {
   float: left;
   width: 320px;
   margin-right: 60px;
+
+  line-height: 24px;
 }
 
 .footer-contacts a {
@@ -324,7 +309,7 @@ h1 {
   width: 368px;
   height: 204px;
   margin: 0 auto; /*Check: \/*/
-  margin-bottom: 25px; /*Check: I used '5 auto 25 auto'*/
+  margin-bottom: 20px; /*Check: I used '5 auto 25 auto'*/
 }
 
 .index-logo img {
@@ -353,7 +338,7 @@ h1 {
   position: relative;
 
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding-bottom: 35px;
 
   font-size: 30px;
@@ -363,6 +348,8 @@ h1 {
 .features-item p {
   margin: 10px;
   margin-bottom: 0;
+
+  line-height: 24px;
 }
 
 .features-name::after {
@@ -383,7 +370,7 @@ h1 {
 /*==========INDEX CONTENT==========*/
 .index-content {
   margin-bottom: 35px;
-  padding: 50px 80px;
+  padding: 45px 80px;
 
   color: #000000;
 
@@ -405,12 +392,14 @@ h1 {
   margin: 0;
   margin-bottom: 25px;
   font-size: 30px;
-  line-height: 42px; /*Check: not proportional in demo !recommended: px - harder!*/
+  line-height: 37px;
 }
 
 .index-content p {
   margin: 0;
   margin-bottom: 25px;
+
+  line-height: 24px;
 }
 
 .news-preview {
@@ -431,6 +420,12 @@ h1 {
 
 .news-preview time {
   text-transform: none;
+
+  line-height: 1.2;
+}
+
+.news-preview-btn {
+  margin-top: 5px;
 }
 
 .gallery {
@@ -468,13 +463,22 @@ h1 {
   right: 0;
 }
 
+.index-content-contacts .index-content-title {
+  margin-bottom: 22px;
+}
+
+.index-content-contacts p {
+  margin-bottom: 22px;
+}
+
+
 /*==========INDEX APPOINTMENT==========*/
 .appointment-form input {
   float: left;
   width: 106px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding: 7px 15px;
+  padding: 9px 15px;
 
   font: inherit;
   color:  inherit;
@@ -495,6 +499,8 @@ h1 {
 .appointment-form .btn {
   clear: both;
   width: 100%;
+
+  margin-bottom: 5px;
 }
 
 /*==========POPUPS==========*/
@@ -505,6 +511,10 @@ h1 {
   right: 0; 
   margin-left: auto;
   margin-right: auto;
+}
+
+.popup-hidden {
+  display: none;
 }
 
 .popup-login {
@@ -669,7 +679,6 @@ h1 {
   top: 50%;
   margin-top: -280px;
   z-index: 20;
-  display: none;
 
   width: 766px;
   height: 560px;
@@ -719,12 +728,12 @@ h1 {
 
 /*==========INNER PAGES - COMMON==========*/
 .inner-page-title {
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .inner-page-title h1 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   padding: 0;
 
   font-size: 30px;
@@ -782,7 +791,7 @@ h1 {
 
 .inner-content h2 {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-size: 24px;
   line-height: 30px;
@@ -801,14 +810,14 @@ h1 {
 }
 
 .inner-content td {
-  padding: 10px 15px;
+  padding: 9px 15px;
 
   border: 2px solid #000000;
 }
 
 .big-heading {
-  margin-top: 55px;
-  margin-bottom: 65px;
+  margin-top: 45px;
+  margin-bottom: 62px;
 
   text-align: center;
 }
@@ -852,7 +861,7 @@ h1 {
 .custom-list-1 li {
   position: relative;
 
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding-left: 20px;
 }
 
@@ -871,6 +880,7 @@ h1 {
 
 .prices-table {
   width: 100%;
+  margin-top: 33px;
 }
 
 .prices-table td {
@@ -883,6 +893,8 @@ h1 {
 
 .short-text {
   padding-right: 80px;
+
+  line-height: 24px;
 }
 
 .inner-columns {
