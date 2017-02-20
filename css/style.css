@@ -206,6 +206,8 @@ body {
 }
 
 .inner-page-footer {
+  margin-top: 50px;
+
   box-shadow: inset 0px 30px 40px -15px #000;
 }
 
@@ -1036,11 +1038,11 @@ body {
   margin-bottom: 20px;
 
   background-color: white;
-  box-shadow: 0 0px 15px rgba(4, 6, 6, 0.2);
+  box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .catalog-content-item:hover {
-  box-shadow: 0 0px 25px rgba(4, 6, 6, 0.2);
+  box-shadow: 0px 0px 25px 0px rgba(0, 1, 1, 0.2);
 }
 
 .catalog-content-item:nth-child(3n) {
@@ -1142,8 +1144,9 @@ body {
 
 .good {/*можно использовать container*/
   width: 940px;
-  padding: 0 10px;
+  padding: 0;
   margin: 0 auto;
+  margin-top: 55px;
 }
 
 .good-gallery {
@@ -1152,12 +1155,20 @@ body {
 }
 
 .good-gallery-current {
-  margin-bottom: 21px;
+  margin-bottom: 15px;
+
+  box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .good-gallery-all img {
   float: left;
-  margin-right: 20px; 
+  margin-right: 20px;
+
+  box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2);
+}
+
+.good-gallery-all img:hover {
+  box-shadow: 0px 0px 25px 0px rgba(0, 1, 1, 0.2);
 }
 
 .good-gallery-all img:nth-child(3n) {
@@ -1173,25 +1184,27 @@ body {
   float: left;
   width: 160px;
   margin-top: 21px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .good-info-id {
   float: right;
-  width: 160px;
+  width: 120px;
   margin-top: 21px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .good-info p {
   width: 390px;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+
+  line-height: 24px;
 }
 
 .good-info-price {
   width: 188px;
-  margin-bottom: 65px;
+  margin-bottom: 63px;
 
   /*TODO: только оформление сетки*/
   min-height: 43px;
@@ -1203,6 +1216,37 @@ body {
 }
 
 .good-info-contents-title {
-  margin-bottom: 34px;
+  margin-bottom: 27px;
   margin-top: 0;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.good-info-contents-items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.good-info-contents-items li {
+  position: relative;
+  padding-left: 22px;
+
+  line-height: 24px;
+}
+
+.good-info-contents-items li:before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 12px;
+
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin-left: -10px;
+
+  background-color: black;
+  transform: rotate(45deg);
 }
